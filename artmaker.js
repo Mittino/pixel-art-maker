@@ -19,8 +19,12 @@ function addClick(){
 }
 console.log(addClick());
 
+var brushColor;
+
 colorContainer.addEventListener("click", function(){
-  var selectedColor = event.target.getAttribute('id');
-  console.log(selectedColor);
-  return selectedColor;
+  brushColor = event.target.getAttribute('id');
+  document.querySelector(".brushColor").style.backgroundColor = brushColor;
+  console.log(brushColor);
+  return brushColor;
 });
+console.log(brushColor);
