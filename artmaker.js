@@ -5,7 +5,6 @@ var grid = document.getElementById("line1");
 var gridItem = document.getElementsByClassName("gridBox");
 //console.log(gridItem);
 
-var selectedColor;
 var colorContainer = document.querySelector(".colorContainer");
 console.log(colorContainer);
 
@@ -21,10 +20,14 @@ function addClick(){
 console.log(addClick());
 
 colorContainer.addEventListener("click", function(){
-  selectedColor = this.style.backgroundColor;
+  var selectedColor = "";
+  //var color = document.getElementByID()
+  //selectedColor =
+  console.log(this.style.backgroundColor);
   console.log(selectedColor);
+  console.log(event.target.id);
 });
-
+console.log(colorContainer.this);
 //function selectColor(){
   // var i;
   // for(i=0; i<colorItems.length; i++){
