@@ -13,7 +13,7 @@ function addClick(){
   for (i=0; i<gridItem.length; i++){
     //console.log(gridItem[i]);
     gridItem[i].addEventListener("click", function(){
-      this.style.backgroundColor = "red";
+      this.style.backgroundColor = brushColor;
     });
   }
 }
