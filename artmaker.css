@@ -10,6 +10,29 @@
   width: 10px;
 }
 
-#line1{
+.colorContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.colorBox{
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+}
+
+#redColor{
+  background: red;
+}
+
+#yellowcolor{
+  background: yellow;
+}
+
+/*#line1{
 
 }
+#line2{
+
+}*/
