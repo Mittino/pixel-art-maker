@@ -1,6 +1,6 @@
 "use strict";
 
-var grid = document.getElementById("line1");
+//var grid = document.getElementById("line1");
 //console.log(grid);
 var gridItem = document.getElementsByClassName("gridBox");
 //console.log(gridItem);
