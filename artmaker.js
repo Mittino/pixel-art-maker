@@ -20,23 +20,7 @@ function addClick(){
 console.log(addClick());
 
 colorContainer.addEventListener("click", function(){
-  var selectedColor = "";
-  //var color = document.getElementByID()
-  //selectedColor =
-  console.log(this.style.backgroundColor);
+  var selectedColor = event.target.getAttribute('id');
   console.log(selectedColor);
-  console.log(event.target.id);
+  return selectedColor;
 });
-console.log(colorContainer.this);
-//function selectColor(){
-  // var i;
-  // for(i=0; i<colorItems.length; i++){
-  //   console.log(colorItems[i]);
-  //   colorItems[i].addEventListener("click", function(){
-  //
-  //     selectedColor = colorItems[i].style.backgroundColor;
-  //     console.log(selectedColor);
-  //   });
-  //}
-// }
-// console.log(selectColor());
