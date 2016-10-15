@@ -1,13 +1,20 @@
 h1 {
   font-family: 'Walter Turncoat', cursive;
   text-align: center;
+  font-size: 40px;
+}
+.heading{
+  font-family: 'Walter Turncoat', cursive;
+  text-align: center;
+  font-size: 25px;
 }
 .gridContainer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  margin: auto;
 }
 .gridBox{
   border: 1px solid black;
@@ -18,19 +25,38 @@ h1 {
 
 .colorContainer{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  background-color: white;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .colorBox{
   border: 1px solid black;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   margin: 20px;
   justify-content: center;
+  text-align: center;
+}
+
+.brushColor{
+  background: white;
+  border-radius: 50%;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+.currentColor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align:center;
 }
 
 #red{
@@ -66,20 +92,6 @@ h1 {
 }
 #black{
   background: black;
-}
-
-.brushColor{
-  background: white;
-  border-radius: 50%;
-
-}
-.currentColor{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: space-between;
 }
 
 td.gridTest{
