@@ -36,21 +36,22 @@
     var i;
     var j;
     var gridContainer;
+    var gridRow;
     var gridBox;
-    var rows = 45;
+    var rows = 25;
     var columns = 25;
 
     for (i=0; i<rows; i++){
       gridContainer = document.querySelector(".gridContainer");
-      gridBox = document.createElement("div");
-      gridBox.className += 'gridBox';
-      gridContainer.appendChild(gridBox);
+      gridRow = document.createElement("div");
+      gridRow.className += 'gridRow';
+      gridContainer.appendChild(gridRow);
 
       for (j=0; j<columns; j++){
-        gridContainer = document.querySelector(".gridContainer");
+        gridContainer = document.querySelector(".gridRow");
         gridBox = document.createElement("div");
         gridBox.className += 'gridBox';
-        gridContainer.appendChild(gridBox);
+        gridRow.appendChild(gridBox);
       }
     }
   })();
