@@ -20,7 +20,7 @@ h1 {
   border: 1px solid black;
   height: 20px;
   width: 20px;
-
+  cursor: cell;
 }
 
 .colorContainer{
@@ -29,7 +29,8 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .colorBox{
@@ -37,9 +38,10 @@ h1 {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 10px;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .brushColor{
@@ -48,6 +50,8 @@ h1 {
   align-self: center;
   justify-content: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .currentColor{
   display: flex;
@@ -57,46 +61,4 @@ h1 {
   justify-content: center;
   align-content: center;
   text-align:center;
-}
-
-#red{
-  background: red;
-}
-
-#yellow{
-  background: yellow;
-}
-#blue{
-  background:blue;
-}
-#purple{
-  background: purple;
-}
-#orange{
-  background:orange;
-}
-#green{
-  background:green;
-}
-#gray{
-  background: gray;
-}
-#white{
-  background:white;
-}
-#lightblue{
-  background: lightblue;
-}
-#brown{
-  background: brown;
-}
-#black{
-  background: black;
-}
-
-td.gridTest{
-  display: grid;
-  grid-template-columns: 20px;
-  grid-template-rows: 20px;
-  border: 3px solid black;
 }
