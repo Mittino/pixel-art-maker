@@ -31,17 +31,29 @@
   var colorContainer = document.querySelector(".colorContainer");
   var gridItem = document.getElementsByClassName("gridBox");
 
-  // (function buildGrid(){
-  //   var i;
-  //   var gridContainerNode = document.querySelector(".gridContainer");
-  //   console.log(gridContainerNode);
-  //
-  //   // for (i=0; i<100; i++){
-  //   //
-  //   // }
-  //
-  //
-  // })();
+
+  (function buildGrid(){
+    var i;
+    var j;
+    var gridContainer;
+    var gridBox;
+    var rows = 45;
+    var columns = 25;
+
+    for (i=0; i<rows; i++){
+      gridContainer = document.querySelector(".gridContainer");
+      gridBox = document.createElement("div");
+      gridBox.className += 'gridBox';
+      gridContainer.appendChild(gridBox);
+
+      for (j=0; j<columns; j++){
+        gridContainer = document.querySelector(".gridContainer");
+        gridBox = document.createElement("div");
+        gridBox.className += 'gridBox';
+        gridContainer.appendChild(gridBox);
+      }
+    }
+  })();
 
 
   (function buildColorPallette() {
