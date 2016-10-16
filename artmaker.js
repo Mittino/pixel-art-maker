@@ -13,6 +13,7 @@
     '#FF681F',
     '#FFAE42',
     '#FFDB00',
+    '#FFF700',
     '#FFFF9F',
     '#299617',
     '#5E8C31',
@@ -43,6 +44,7 @@
 
   var colorContainer = document.querySelector(".colorContainer");
   var gridItem = document.getElementsByClassName("gridBox");
+  var gridContainer = document.querySelector(".gridContainer");
 
 
   (function buildGrid(){
@@ -83,13 +85,19 @@
 
   (function addClick(){
     var i;
-    var clickHandler = function(){
-      this.style.backgroundColor = brushColor;
-    };
+    var paint = false;
 
-    for (i=0; i<gridItem.length; i++){
-      gridItem[i].addEventListener("click", clickHandler);
-    }
+    var clickHandler = function(){
+      if (event.target.className.includes('gridBox')){
+        event.target.style.backgroundColor = brushColor;
+      }
+    };
+    gridContainer.addEventListener("click", clickHandler);
+    // for (i=0; i<gridItem.length; i++){
+    //   gridItem[i].addEventListener("click", clickHandler);
+    //   //gridItem[i].addEventListener("mouseover", clickHandler);
+    //   //gridItem[i].addEventListener("mouseup", clickHandler);
+    // }
   })();
 
   colorContainer.addEventListener("click", function(){

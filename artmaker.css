@@ -10,7 +10,7 @@ h1 {
 }
 .gridContainer{
   text-align: center;
-
+  margin: auto;
 }
 .gridRow{
   display: inline-block;
