@@ -1,3 +1,6 @@
+body {
+  text-align: center;
+}
 h1 {
   font-family: 'Walter Turncoat', cursive;
   text-align: center;
@@ -9,11 +12,10 @@ h1 {
   font-size: 25px;
 }
 .gridContainer{
-  text-align: center;
-  margin: auto;
+  display: inline-block;
 }
 .gridRow{
-  display: inline-block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }

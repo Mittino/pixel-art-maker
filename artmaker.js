@@ -43,7 +43,6 @@
   setBrushColor('white');
 
   var colorContainer = document.querySelector(".colorContainer");
-  var gridItem = document.getElementsByClassName("gridBox");
   var gridContainer = document.querySelector(".gridContainer");
 
 
@@ -84,20 +83,19 @@
   })();
 
   (function addClick(){
-    var i;
-    var paint = false;
+    var mousedown = false;
 
-    var clickHandler = function(){
-      if (event.target.className.includes('gridBox')){
+    gridContainer.addEventListener("mousedown", function() {
+      mousedown = true;
+    });
+    gridContainer.addEventListener("mouseup", function() {
+      mousedown = false;
+    });
+    gridContainer.addEventListener("mousemove", function() {
+      if (mousedown === true && event.target.className.includes('gridBox')) {
         event.target.style.backgroundColor = brushColor;
       }
-    };
-    gridContainer.addEventListener("click", clickHandler);
-    // for (i=0; i<gridItem.length; i++){
-    //   gridItem[i].addEventListener("click", clickHandler);
-    //   //gridItem[i].addEventListener("mouseover", clickHandler);
-    //   //gridItem[i].addEventListener("mouseup", clickHandler);
-    // }
+    });
   })();
 
   colorContainer.addEventListener("click", function(){
