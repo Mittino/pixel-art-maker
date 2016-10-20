@@ -44,9 +44,8 @@
 
   var colorContainer = document.querySelector(".colorContainer");
   var gridContainer = document.querySelector(".gridContainer");
-  var selectColor;
-  // = document.getElementById("selectColor").value;
-  // console.log(selectColor);
+  var selectColor = document.getElementById("selectColor");
+  console.log(selectColor);
   var submitColor = document.getElementById("submitColor");
 
 
@@ -113,10 +112,9 @@
     document.querySelector(".brushColor").style.backgroundColor = colorId;
   }
 
-  submitColor.addEventListener("click", function(){
+  selectColor.addEventListener("change", function(){
     brushColor = document.getElementById("selectColor").value;
     setBrushColor(brushColor);
-    console.log(brushColor);
     return brushColor;
   });
 
