@@ -45,8 +45,6 @@
   var colorContainer = document.querySelector(".colorContainer");
   var gridContainer = document.querySelector(".gridContainer");
   var selectColor = document.getElementById("selectColor");
-  console.log(selectColor);
-  var submitColor = document.getElementById("submitColor");
 
 
   (function buildGrid(){
