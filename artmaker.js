@@ -44,6 +44,10 @@
 
   var colorContainer = document.querySelector(".colorContainer");
   var gridContainer = document.querySelector(".gridContainer");
+  var selectColor;
+  // = document.getElementById("selectColor").value;
+  // console.log(selectColor);
+  var submitColor = document.getElementById("submitColor");
 
 
   (function buildGrid(){
@@ -108,4 +112,12 @@
     brushColor = colorId;
     document.querySelector(".brushColor").style.backgroundColor = colorId;
   }
+
+  submitColor.addEventListener("click", function(){
+    brushColor = document.getElementById("selectColor").value;
+    setBrushColor(brushColor);
+    console.log(brushColor);
+    return brushColor;
+  });
+
 })();
